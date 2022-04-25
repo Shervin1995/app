@@ -5,6 +5,7 @@ var Controllers = {
 
     // category
     getCategories: require("./Category/getCategories"),
+    addCategory: require("./Category/addCategory"),
 
     // product
     getProducts: require("./Product/getProducts"),

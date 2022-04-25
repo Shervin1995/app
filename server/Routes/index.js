@@ -1,11 +1,15 @@
 
 var router = require("express").Router()
 var {
-    getProducts,
+
     getCategories,
+    addCategory,
+    
+    getProducts,
     addProduct,
     updateProduct,
     deleteProduct
+
 } = require("../Controllers")
 
 
@@ -14,8 +18,10 @@ var {
 // APIs
 // ---------------------------------------  
 
+
 // category
 router.get('/categories', getCategories)
+router.post('/add-category', addCategory)
 
 
 // product
