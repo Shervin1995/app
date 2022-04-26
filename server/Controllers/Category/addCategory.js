@@ -10,7 +10,7 @@ async function addCategory(req, res) {
         
         await CATEGORY.create({
             id: await CATEGORY.max('id', {}) + 1,
-            title: req.body.the_title 
+            title: req.body.title 
         })
 
         res.json({message: "category added!"})
